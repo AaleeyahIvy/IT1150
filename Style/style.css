@@ -1,10 +1,95 @@
-h1.a {
-    border-left: 6px solid #08c1fffd;
-	background-color: rgb(233, 209, 103);
-	font-family: 'Optima', san-serif;
-	color: black;
-	font-size: 16pt;
+h1 {
+  border-left: 6px solid #af0175fd;
+  background-color: rgba(255, 16, 147, 0.322);
+  font-family: "Open Sans", sans-serif;
+  color: #af0175fd;
+  font-size: 16pt;
 }
 body {
-    background-color:rgb(226, 226, 226);
+  display: inline;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(255, 153, 209);
+  text-align: center;
+  color: #af0175fd;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+  display: inline;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.b {
+  list-style: none;
+}
+.b:hover {
+  list-style-image: url("flower.png");
+  color: #efff08fd;
+}
+.f {
+  padding: 15px;
+  margin: 19px;
+  list-style: none;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  display: inline-table;
+  color: rgb(190, 12, 57);
+}
+.f:hover {
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(255, 150, 199) 0%,
+    rgb(255, 29, 168) 100.2%
+  );
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #ff9fdf;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 0, 128);
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(194, 3, 99);
+}
+button {
+  background-color: rgb(255, 153, 209);
+  color: #af0175fd;
+}
+ul{
+	list-style-type: none;
 }
