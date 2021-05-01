@@ -1,25 +1,87 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="Style/style.css"
-  <title>About Aaleeyah Ivy</title>
-</head>
-<body>
-  <h1 class="a">Hi There!</h1>
-      <p>My name is Aaleeyah. I hope to be able to advance my front-end knowledge and use it to make projects of my own.
-      Then also make acquaintances too. I became interested in programming because of discord bots. 
-      This exposed me to Javascript and it's technologies I realized learning programming and 
-      teaching others about concepts were enjoyable. Also I hope to explore front-end and back-end and 
-      eventually decide which is ultimately for me!</p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="Style/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet"/>
+    <title>About Aaleeyah Ivy</title>
+  </head>
+  <body class="col-6">
+    <button onmouseover="typeWriter()">Hover here!!!</button>
+    <h1 id="demo"> </h1>
+    <p>My name is Aaleeyah. I hope to be able to advance my front-end knowledge
+      and use it to make projects of my own. Then also make acquaintances too. I
+      became interested in programming because of discord bots. This exposed me
+      to Javascript and it's technologies I realized learning programming and
+      teaching others about concepts were enjoyable.</p>
+    <ul>
+      <li>My goals after graduating—including big goals:</li>
+      <li class="b">Gain experience through a job</li>
+      <li class="b">Fully learn 2 programming langauges</li>
+      <li class="b">Learn Japanese</li>
+      <li class="b">Make a fullstack application</li>
+      <li class="b">Be able to contribute to others happiness</li>
+    </ul>
+    <div>
+      <img
+        src="Images/me.jpg"
+        alt="Me at graduation"
+        width="400"
+        height="600"
+        title="Me"
+      />
+      <br /><a
+        href="https://en.wikipedia.org/wiki/Portal:Anime_and_manga"
+        target="blank"
+        >Here's my favorite wikipedia page!</a
+      >
+    </div>
+    <div class="col-3">
+      <ul>
+        <li class="f">
+          <a href="https://aaleeyahivy.github.io/ProjectTwo/" target="blank"
+            >Project Two</a
+          >
+        </li>
+        <li class="f">
+          <a
+            href="https://aaleeyahivy.github.io/ProjectThree/Index.html"
+            target="blank"
+            >Project Three</a
+          >
+        </li>
+        <li class="f">
+          <a href="https://aaleeyahivy.github.io/ProjectFour/" target="blank"
+            >Project Four</a
+          >
+        </li>
+        <li class="f">
+          <a href="https://aaleeyahivy.github.io/ProjectFive/" target="blank"
+            >Project Five</a
+          >
+        </li>
+        <li class="f">
+          <a href="https://github.com/AaleeyahIvy/" target="blank"
+            >Github Profile</a
+          >
+        </li>
+      </ul>
+    </div>
 
-        <ul>My goals after graduating—including big goals:
-          <li onmouseover="style.color='#80dfff'" onmouseout="style.color='black'">Gain experience through a job</li>
-          <li onmouseover="style.color='#80dfff'" onmouseout="style.color='black'">Fully learn 2 programming langauges</li>
-          <li onmouseover="style.color='#80dfff'" onmouseout="style.color='black'">Learn Japanese</li>
-          <li onmouseover="style.color='#80dfff'" onmouseout="style.color='black'">Make a fullstack application</li>
-        </ul>
+    <script>
+      var i = 0;
+      var txt = "Hey, My name is Aaleeyah Ivy!";
+      var speed = 50;
 
-        <img src="Images/meAtGrad.jpg" alt="Me at graduation" width="400" height="400" title="Me">
-        <br><a href="https://en.wikipedia.org/wiki/Portal:Anime_and_manga" target="blank">Here's my favorite wikipedia page!</a>
-</body>
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("demo").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+  </body>
 </html>
