@@ -50,10 +50,12 @@ body {
   width: 100%;
 }
 .b {
+  padding: 1px;
+  margin: 10px;
   list-style: none;
 }
 .b:hover {
-  list-style-image: url("flower.png");
+  list-style-image: url("flower.jpg");
   color: #efff08fd;
 }
 .f {
